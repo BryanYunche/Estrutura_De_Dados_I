@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1712257541 source:c:\users\bryan\documents\primeiro_semestre_2024\estrutura_de_dados\trabalhospraticos\lista01\lista01_01\main.c
+	<stdio.h>
+	<stdlib.h>
+
