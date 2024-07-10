@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+//Ler as notas obtidas por 5 alunos, calcular a média entre as notas lidas e apresentá-la. 
 
 int main()
 {

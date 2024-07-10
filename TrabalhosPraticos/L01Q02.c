@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
+//Ler dois valores inteiros e apresentar sua: SOMA=xx, DIFERENÃ‡A=xx, PRODUTO=xx, e MÃ‰DIA=xx
 
 int main(void)
 {
-    //Variáveis onde vai ser armazenado os valores
+    //VariÃ¡veis onde vai ser armazenado os valores
     int num01, num02;
 
-    //Variáveis de Soma, Diferença, Produto, Média.
+    //Ã¡ de Soma, DiferenÃ§a, Produto, Media.
     int SOMA, DIFERENCA, PRODUTO, MEDIA;
 
-    //Ler dois valores inteiros e apresentar sua: SOMA=xx, DIFERENÇA=xx, PRODUTO=xx, e MÉDIA=xx
+    //Ler dois valores inteiros e apresentar sua: SOMA=xx, DIFERENÃ‡A=xx, PRODUTO=xx, e MÃ‰DIA=xx
     printf("Digite um numero inteiro:");
     scanf("%d", &num01);
     printf("\nDigite outro numero inteiro:");
