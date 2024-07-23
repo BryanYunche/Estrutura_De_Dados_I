@@ -19,4 +19,3 @@ printf("\nRaiz do numero: %.2lf", sqrt(numero));
 
 }
 
-//teste git
