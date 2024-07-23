@@ -18,3 +18,5 @@ printf("\nNumero elevado ao quadrado: %.2lf", pow(numero, 2));
 printf("\nRaiz do numero: %.2lf", sqrt(numero));
 
 }
+
+//teste git
