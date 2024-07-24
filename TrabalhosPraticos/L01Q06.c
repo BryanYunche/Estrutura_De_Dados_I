@@ -6,7 +6,19 @@
 //teste git
 
 int main (){
-    printf("ola mundo");
+
+    int base, altura;
+    
+
+    printf("Digite o valor da Base: ");
+    scanf("%d", &base);
+    printf("Digite o valor da Altura: ");
+    scanf("%d", &altura);
+
+    //Calculo Perimetro
+
+
+    printf("Base: %d \nAltura: %d ", base, altura);
 
     return 0;
 }
