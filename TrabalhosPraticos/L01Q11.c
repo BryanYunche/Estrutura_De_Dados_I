@@ -4,6 +4,18 @@
 
 int main(){
     
+    double pr1, pr2, mediaReal, mediaTruncada;
+
+    printf("Digite o valor da prova 01: ");
+    scanf("%lf", &pr1);
+
+    printf("\nDigite o valor da prova 02: ");
+    scanf("%lf", &pr2);
+
+    mediaReal = ((pr1+pr2)/2);
+    mediaTruncada = mediaReal;
+
+    printf("\nMedia Real: %.2f\nMedia Truncada: %.2f", mediaReal, mediaTruncada);
 
     return 0;
 }

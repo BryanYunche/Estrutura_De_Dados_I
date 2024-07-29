@@ -13,6 +13,54 @@
 
 int main(){
     
+    int numeroMatricula, anoAdmissao, numeroDependentes, tempoServico;
+    double salarioBruto, salarioFinal;
+
+    //Constantes Créditos
+    #define REAJUSTE 0.10
+    #define BONUS_BIENIO 100
+    #define BONUS_DEPENDENTE 50
+    #define ANO_ATUAL 2024
+
+    //Constantes Despesas
+    #define INSS 0.25
+    #define IMPOSTO_RENDA 0.50
+    #define DEPENDENTE_SAUDE 75
+
+    //Funcionário Default
+    numeroMatricula = 12345;
+    anoAdmissao = 2010;
+    numeroDependentes = 2;
+    salarioBruto = 3000.00;
+    salarioFinal = 0.0;
+
+    //Tempo de serviço
+    tempoServico = ANO_ATUAL-anoAdmissao;
+
+
+    //Acrécimos do Salário
+    salarioFinal = salarioFinal + (salarioBruto*REAJUSTE);
+    salarioFinal = salarioFinal + ((tempoServico/2)*BONUS_BIENIO);
+    salarioFinal = salarioFinal + (numeroDependentes*BONUS_DEPENDENTE);
+
+    //Despesas Salario
+    
+
+
+    printf("Digite o número de matricula do funcionário: ");
+    scanf("%d", &numeroMatricula);
+
+    printf("Digite o ano de admissao: ");
+    scanf("%d", &anoAdmissao);
+
+    printf("Digite o valor de seu salário Base: ");
+    scanf("%d", &anoAdmissao);
+
+    printf("Digite o número de dependentes: ");
+    scanf("%d", &anoAdmissao);
+
+
+
 
     return 0;
 }
