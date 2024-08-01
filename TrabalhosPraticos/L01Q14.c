@@ -14,7 +14,7 @@
 int main(){
     
     int numeroMatricula, anoAdmissao, numeroDependentes, tempoServico;
-    double salarioBruto, salarioFinal;
+    double salarioBruto, salarioFinal, acressimosTotal, despesasTotal;
 
     //Constantes Créditos
     #define REAJUSTE 0.10
@@ -27,45 +27,39 @@ int main(){
     #define IMPOSTO_RENDA 0.50
     #define DEPENDENTE_SAUDE 75
 
-    //Funcionário Default
-    numeroMatricula = 12345;
-    anoAdmissao = 2010;
-    numeroDependentes = 2;
-    salarioBruto = 3000.00;
-    salarioFinal = 0.0;
-
-    //Tempo de serviço
-    tempoServico = ANO_ATUAL-anoAdmissao;
-
-
-    //Acrécimos do Salário
-    salarioFinal = salarioFinal + (salarioBruto*REAJUSTE);
-    salarioFinal = salarioFinal + ((tempoServico/2)*BONUS_BIENIO);
-    salarioFinal = salarioFinal + (numeroDependentes*BONUS_DEPENDENTE);
-
-    //Despesas Salario
-    salarioFinal = salarioFinal - (salarioBruto*INSS);
-    salarioFinal = salarioFinal - ((salarioBruto - (salarioBruto*INSS))*IMPOSTO_RENDA);
-    salarioFinal = salarioFinal - DEPENDENTE_SAUDE - (DEPENDENTE_SAUDE*numeroDependentes);
-
-    printf("Digite o número de matricula do funcionario: ");
+    printf("Digite o numero de matricula do funcionario: ");
     scanf("%d", &numeroMatricula);
 
     printf("Digite o ano de admissao: ");
     scanf("%d", &anoAdmissao);
 
     printf("Digite o valor de seu salario Base: ");
-    scanf("%d", &anoAdmissao);
+    scanf("%lf", &salarioBruto);
 
     printf("Digite o numero de dependentes: ");
-    scanf("%d", &anoAdmissao);
+    scanf("%d", &numeroDependentes);
 
-    printf("Salario bruto: %f", salarioBruto);
-    printf("Acressimos ao salario: %f", salarioBruto);
-    printf("Despesas do salaria: %f", salarioBruto);
-    printf("Salario liquido final: %f", salarioFinal);
+    //Tempo de serviço
+    tempoServico = ANO_ATUAL-anoAdmissao;
+
+    //Acrécimos do Salário
+    acressimosTotal = (salarioBruto*REAJUSTE) + 
+                      ((tempoServico/2)*BONUS_BIENIO) + 
+                      (numeroDependentes*BONUS_DEPENDENTE);
+
+    //Despesas Salario
+    despesasTotal = (salarioBruto*INSS) + 
+                    (( salarioBruto - salarioBruto*INSS)*IMPOSTO_RENDA) + 
+                    (DEPENDENTE_SAUDE*(numeroDependentes + 1));
+
+    //Salario final
+    salarioFinal = salarioBruto + acressimosTotal - despesasTotal;
 
 
+    printf("\nSalario bruto: %.2f", salarioBruto);
+    printf("\nAcressimos ao salario: %.2f", acressimosTotal);
+    printf("\nDespesas do salaria: %.2f", despesasTotal);
+    printf("\nSalario liquido final: %.2f", salarioFinal);
 
     return 0;
 }
