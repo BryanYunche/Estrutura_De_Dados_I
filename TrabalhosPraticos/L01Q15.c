@@ -4,31 +4,33 @@
 
 int main(){
 
-    int segundos, horaInteira, minutoInteiro;
+    int segundos, horaInteira, minutoInteiro, segundosSobra;
     double minutos, horas, restoHora, restoMinuto;
 
     printf("Digite um valor em segundos: ");
-    scanf("%d", segundos);
+    scanf("%d", &segundos);
 
     //Calcula o valor total em horas
-    minutos = segundos/60;
-    horas = minutos/60;
+    horas = segundos/3600 ; //Perceba que aqui tem o total em horas de todos os segundos digitados
     
-    //Partes Inteiras
     horaInteira = (int)horas;
 
-    //Calculando resto de horas
     restoHora = horas - horaInteira;
 
-    minutoInteiro = (int)minutos + (restoHora*60);
+    minutos = (restoHora*60);
 
-    printf("Horas: ")
+    minutoInteiro = (int)minutos;
 
+    restoMinuto = minutos - minutoInteiro;
 
+    segundosSobra = restoMinuto * 60;
 
+    printf("\nHoras: %d", horaInteira);
+    printf("\nMinuto: %d", minutoInteiro);
+    printf("\nSegundo: %d", segundosSobra);
 
     //Deixa no formato
-    printf("\nHoras: %d Minutos: %d Segundos: %d ", horas);
+    //printf("\nHoras: %d Minutos: %d Segundos: %d ", horas);
 
 
     return 0;
