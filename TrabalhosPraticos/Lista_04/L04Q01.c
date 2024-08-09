@@ -1,13 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(){
 
-    int cemPrimeiros[99];
+    int cemPrimeiros[100];
+    int i;
 
-    for (int i = 0; i < 99; i++){
+    for(i = 1; i <= 100; i++){
+
         cemPrimeiros[i] = i;
+        printf("%d\n", cemPrimeiros[i]);
+
     }
 
-    printf("%d", cemPrimeiros);
+    
+
     return 0;
 }
