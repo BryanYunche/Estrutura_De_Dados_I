@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Fazer um programa em C para calcular a soma dos 100 primeiros números inteiros usar vetores.
+
 int somaVetorInt(int *vetor, int tamanhoVetor);
 
 int main(){
