@@ -1,4 +1,6 @@
-#  questão_5
+#Implemente um programa em C que lê elementos inteiros e multiplica 
+# cada elemento pelo índice do vetor e imprime o vetor resultante.
+
 def main():
     
     n = int(input("Digite a quantidade de elementos: "))

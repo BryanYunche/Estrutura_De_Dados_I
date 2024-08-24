@@ -1,4 +1,7 @@
-#questao_13
+#Implemente a função pares, que recebe como parâmetros um vetor de números inteiros 
+# (vet) de tamanho n e retorna quantos números pares estão armazenados nesse vetor. 
+# Essa função deve obedecer ao protótipo.
+
 def pares(vet):
     count = 0
     for num in vet:

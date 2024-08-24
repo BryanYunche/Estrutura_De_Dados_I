@@ -1,4 +1,7 @@
-#questao_17
+#Implemente a função busca, que recebe como parâmetro um vetor de números de ponto flutuante (vet) 
+# de tamanho n e um valo x. A função deve retornar q se x pertence a esse vetor e 0 caso contrario. 
+# Essa função deve obedecer ao protótipo:
+
 def busca(n, vet, x):
     for i in range(n):
         if vet[i] == x:

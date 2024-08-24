@@ -1,5 +1,7 @@
+#Implemente uma função que calcule a transposta de uma matriz mat. 
+# A função tem como valor de retorno o ponteiro do vetor que representa a matriz transposta criada. 
+# A implementação dessa função deve ser dada por: float * transposta (int m,int n, float* mat)  OBS:utilizar vetor simples
 
-#queestao_19
 def transposta(m, n, mat):
     
     transposta = [0.0] * (m * n)

@@ -1,3 +1,8 @@
+#Implementar o  exercício 6 utilizando alocação dinâmica de memória, sugestões: 
+# para fazer a alocação dinâmica use: v=(float  *)malloc(n*sizeof(float))  ,  
+# testar  para  ver  se  existe  memória  suficiente  para  fazer  a  alocação  if(v==NULL) 
+# {printf(“Memória Insuficiente\n”); exit(1);} e para liberar o espaço de memória use free(v);
+
 import ctypes
 
 def media(v):

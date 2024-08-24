@@ -1,4 +1,7 @@
-#questao  11
+#Implemente um programa em c que imprime os elementos da diagonal 
+# principal da matriz e calcula a soma dos mesmos. Onde mat é uma 
+# matriz da forma :float mat[4][3]={{1,2,3},{4,5,6},{7,8,9}}; 
+
 def print_diagonal_and_sum(matrix):
     diagonal_elements = []
     diagonal_sum = 0
