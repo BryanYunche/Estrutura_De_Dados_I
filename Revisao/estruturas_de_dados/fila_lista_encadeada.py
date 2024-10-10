@@ -49,3 +49,9 @@ class fila_Lista_encadeada:
 
         print()
         print(20*'-')
+    
+    def libera_lista(self):
+        self.inicio = None
+        self.fim = None
+
+        

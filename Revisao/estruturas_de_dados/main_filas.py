@@ -1,5 +1,6 @@
 #Listas: É uma estrutura de dados que armazena elementos em uma sequência. 
 # Cada elemento tem uma posição específica, e é possível acessar diretamente os elementos pela sua posição.
+#Segue a lógica FIFO (First-In, First-Out), ou seja, o primeiro elemento inserido será o primeiro a ser removido
 
 
 #Fila usando Lista/vetores --------------------------------------------------------------------
@@ -46,8 +47,3 @@ exemplo_lista_encadeada.remove()
 exemplo_lista_encadeada.imprime_lista()
 
 exemplo_lista_encadeada.remove()
-
-
-
-#Recursivas
-#Circulares
