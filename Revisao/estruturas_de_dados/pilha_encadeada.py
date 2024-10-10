@@ -9,22 +9,41 @@ class Node:
 class pilha_encadeada:
 
     def __init__(self):
-        self.pilha_inicio = None
-        self.pilha_fim = None
+        self.pilha_topo = None
 
-    def insere(self, valor):
+    def insere(self, item):
 
-        novo_no = Node()
+        novo_no = Node(item)
 
-        if self.pilha_fim:
-            self.pilha
-            pass
+        #Caso o topo da pilha não esteja vazia
+        if self.pilha_topo:
+            novo_no.proximo_no = self.pilha_topo
+            self.pilha_topo = novo_no         
+        else:
+            self.pilha_topo = novo_no   
 
     def remove(self):
-        pass
+        
+        #Verifica se a pilha está vazia
+        if self.pilha_topo:
+            print(f'Valor retirado: {self.pilha_topo.valor}')
+            self.pilha_topo = self.pilha_topo.proximo_no
+        else:
+            print(f'Tem nada mais pra tirar aqui meu cria.')
+
 
     def imprime(self):
-        pass
+        
+        if self.pilha_topo:
+            #Enquanto a fila não for vazia
+            iterador = self.pilha_topo
+            while iterador:
+                print(f'| {iterador.valor} |')
+                iterador = iterador.proximo_no
+        else:    
+            print('A fila está vazia!')
 
     def libera(self):
-        pass
+        self.pilha_topo = None
+
+

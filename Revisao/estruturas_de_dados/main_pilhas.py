@@ -20,5 +20,30 @@ exemplo_pilha_vetor.remove()
 exemplo_pilha_vetor.imprime_pilha()
 
 #Pilhas usando lista_encadeada ----------------------------------
+from pilha_encadeada import pilha_encadeada
 
+print(20*'+-+')
+
+exemplo_pilha_encadeada = pilha_encadeada()
+
+exemplo_pilha_encadeada.insere('Primeiro')
+exemplo_pilha_encadeada.insere('Segundo')
+exemplo_pilha_encadeada.insere('Terceiro')
+exemplo_pilha_encadeada.insere('Quarto')
+exemplo_pilha_encadeada.insere('Quinto')
+
+exemplo_pilha_encadeada.imprime()
+
+exemplo_pilha_encadeada.remove()
+
+exemplo_pilha_encadeada.imprime()
+
+exemplo_pilha_encadeada.remove()
+exemplo_pilha_encadeada.remove()
+exemplo_pilha_encadeada.remove()
+
+exemplo_pilha_encadeada.imprime()
+
+exemplo_pilha_encadeada.remove()
+exemplo_pilha_encadeada.remove()
 
